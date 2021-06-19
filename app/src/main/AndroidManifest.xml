@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fish.cashflow">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Amabutho"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ConformationActivity"></activity>
+        <activity android:name=".PayNowActivity" />
+        <activity android:name=".ResetActivity" />
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BudgetPieChart"
+            android:screenOrientation="portrait"
+            android:theme="@style/withActionBar" />
+        <activity
+            android:name=".History"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Statistic"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Saving"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
